@@ -1,12 +1,7 @@
 <div class="author">
-    <h1 class="author__heading">Hi, I'm Pavithran</h1>
-    <p class="author__body">web developer and content creator</p>
+    <h1 class="author__heading">Search Results</h1>
 </div>
-
-<img src="/img/hero-image.webp" alt="person looking out through windw" class="hero-image" width="981" height="528">
-
-<section class="articles">
-    <h2 class="articles__heading">Latest Posts</h2>
+<section class="artciles">
     <ul class="article-ul">
         <% data.forEach(post=> { %>
 
@@ -22,7 +17,5 @@
             </li>
             <% }) %>
     </ul>
-    <% if (nextPage !=null) { %>
-        <a href="/?page=<%= nextPage %>" class="pagination">&lt; View older post</a>
-        <% } %>
+
 </section>
